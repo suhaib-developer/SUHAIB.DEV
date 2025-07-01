@@ -131,6 +131,53 @@ header .content p{
   color: #ccc;
 }
 
+.hero-icons a {
+  text-decoration: none;
+  color: white !important;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  background-color: #11000f;
+  font-weight: 100;
+  font-size: 20px;
+  border: 1px solid #faa3f0;
+  border-radius: 5px;
+  transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Twitter Hover Effect */
+.hero-icons .twitter:hover {
+  border: 1px white;
+  background-color: #1DA1F2; /* Twitter's blue */
+  transform: scale(1.1); /* Slight scale-up effect */
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.8); /* Glow effect */
+}
+
+/* Instagram Hover Effect */
+.hero-icons .instagram:hover {
+  border: 1px white;
+  background: linear-gradient(45deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5);
+  transform: scale(1.1); 
+  box-shadow: 0 0 15px rgba(250, 126, 30, 0.8); 
+}
+
+/* tiktok Hover Effect */
+.hero-icons .tiktok:hover {
+  border: 1px #FE2C55;
+  background: linear-gradient(45deg, #25F4EE, #FE2C55,);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 119, 181, 0.8);
+}
+
+/* Facebook Hover Effect */
+.hero-icons .facebook:hover {
+  border: 1px solid #1877F2;
+  background-color: #1877F2; /* Facebook blue */
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.8);
+}
+
 header .image{
   position: relative;
 }
