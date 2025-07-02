@@ -27,11 +27,6 @@ body{
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: #060013; /* make sure it's the same as your body or header */
-  
   max-width: 1500px;
   margin: auto;
   padding: 2rem 1rem;
