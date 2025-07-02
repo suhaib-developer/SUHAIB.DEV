@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  display: flex;
+
+}
+
+a{
+  text-decoration: none;
+
+}
+
+
+body{
+  font-family: 'poppins' , sans-serif;
+  background-color: #060013;
+
+}
+
+nav{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-logo{
+  max-width: 100px;
+}
+
+.nav-links{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.link a{
+  position: relative;
+  padding-bottom: 0.75rem;
+  color: #fff;
+}
+
+.link a::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #a00000;
+  transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+  width: 80%;
+}
+
+.btn{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(145, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: rgb(85, 5, 5);
+}
+
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+
+.blur{
+  position: absolute;
+
+  box-shadow: 100px 0 1000px 75px rgba(216, 29, 29, 0.8);
+  z-index: -100;
+}
+
+header{
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+header .content h4{
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header .content h1{
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+header .content h1 span{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.hero-icons a {
+  text-decoration: none;
+  color: white !important;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  background-color: #11000f;
+  font-weight: 100;
+  font-size: 20px;
+  border: 1px solid #faa3f0;
+  border-radius: 5px;
+  transition: all 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Twitter Hover Effect */
+.hero-icons .twitter:hover {
+  border: 1px white;
+  background-color: #1DA1F2; /* Twitter's blue */
+  transform: scale(1.1); /* Slight scale-up effect */
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.8); /* Glow effect */
+}
+
+/* Instagram Hover Effect */
+.hero-icons .instagram:hover {
+  border: 1px white;
+  background: linear-gradient(45deg, #FEDA75, #FA7E1E, #D62976, #962FBF, #4F5BD5);
+  transform: scale(1.1); 
+  box-shadow: 0 0 15px rgba(250, 126, 30, 0.8); 
+}
+
+/* tiktok Hover Effect */
+.hero-icons .tiktok:hover {
+  border: 1px #FE2C55;
+  background: linear-gradient(45deg, #25F4EE, #FE2C55,);
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 119, 181, 0.8);
+}
+
+/* Facebook Hover Effect */
+.hero-icons .facebook:hover {
+  border: 1px solid #1877F2;
+  background-color: #1877F2; /* Facebook blue */
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.8);
+}
+
+header .image{
+  position: relative;
+}
+
+header .image::before{
+  content: "C";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35rem;
+  font-weight: 900;
+  line-height: 20rem;
+  color: #d81d1d;
+  opacity: 0.2;
+  z-index: -100;
+}
+
+header .image img{
+  max-width: 600px;
+  margin: auto;
+}
+
+section .header{
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.features{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.features .card{
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.features .card:hover{
+  background-color: #323232;
+  border-color: #fff;
+}
+
+.features .card span{
+  display: inline-block;
+  background-color: #990101;
+  padding:  2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.features .card h4{
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.features .card p{
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.features .card  a{
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+  color: #d30000;
+}
+
+.sub-header{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+
+.pricing{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pricing .card{
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+  background-color: #323232;
+  border-color: white;
+}
+
+.pricing .card .content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing .card .btn{
+  margin-top: auto;
+  margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing .card h3{
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+  color: #fff;
+  margin-bottom: 0.75rem;
+
+}
+
+.pricing .card p i{
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
+}
+
+.pricing .card button{
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+  background-color: #990101;
+  border-color: #990101;
+}
+
+footer{
+  position: relative;
+  display: grid;
+  grid-template-columns:  400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+footer .column .logo{
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+footer .column p{
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+footer .column .socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .column .socials a{
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Facebook */
+footer .column .socials a[href*="facebook.com"]:hover {
+  background-color: #1877F2; /* Facebook blue */
+  border-color: #1877F2;
+  color: #fff;
+}
+
+/* WhatsApp */
+footer .column .socials a[href*="wa.me"]:hover {
+  background-color: #25D366; /* WhatsApp green */
+  border-color: #25D366;
+  color: #fff;
+}
+
+/* Instagram */
+footer .column .socials a[href*="instagram.com"]:hover {
+  background-color: #E4405F; /* Instagram pink */
+  border-color: #E4405F;
+  color: #fff;
+}
+
+/* Twitter (X) */
+footer .column .socials a[href*="x.com"]:hover {
+  background-color: #000; /* Twitter (X) black */
+  border-color: #ffffff;
+  color: #fff;
+}
+
+
+
+footer .column h4{
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer .column > a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+footer .column > a:hover{
+  color: #d30000;
+}
+
+.copyright{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+
+
+@media (width < 1170px){
+  .nav-links{
+    display: none;
+    
+  }
+
+  .nav-logo{
+    max-width: 90px;
+    padding-left: 10px;
+  }
+
+  header{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .image{
+    grid-area: 1/1/2/2;
+  }
+  .features{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pricing{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px){
+  header .image::before{
+    display: none;
+  }
+
+  .nav-logo{
+    max-width: 70px;
+    padding-left: 10px;
+  }
+
+  .btn{
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: rgb(145, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .features{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer{
+    grid-template-columns: 1fr 150px;
+  }
+}
+
+.nav-logo .socials{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials-2 a{
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+
+.socials-2 a:hover{
+  color: #fff;
+  background-color: #d30000;
+  border-color: #d30000;
+}
+
+.my-image {
+  width: 100%; /* Adjust based on your layout */
+  height: auto;
+  content: "C";
+  position: absolute;
+  top: -190px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35rem;
+  font-weight: 900;
+  line-height: 20rem;
+  color: #d81d1d;
+  opacity: 0.2;
+  z-index: -100;
+  opacity: 0.20; /* Adjust as needed */
+
+
+  /* Apply gradient fade */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+#contact {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#contact .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+#contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+
+/* pricing page */
+
+.ri-whatsapp-line{
+  color: #ccc;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 10px; /* Make it more circular */
+  font-size: 1.25rem;
+  border-radius: 50%; /* Ensures a perfect circle */
+  display: inline-flex; /* Center icon inside */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.ri-whatsapp-line:hover{
+  color: #fff;
+  background-color: #00af0f;
+  border-color: #00af0f;
+}
+
+.call-me-directly{
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.call-me-directly .call-me-directly-text{
+  padding-top: 33px;
+}
+
+footer .column .socials a[href*="wa.me"] {
+  color: #ccc;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 0; /* Remove padding */
+  font-size: 1.25rem;
+  border-radius: 50%; /* Ensures a perfect circle */
+  display: inline-flex; /* Center icon inside */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+footer .column .socials a[href*="wa.me"] i {
+  margin: 0; /* Remove extra spacing */
+}
+
+footer .column .socials a[href*="wa.me"]:hover {
+  color: #fff;
+  background-color: #00af0f;
+  border-color: #00af0f;
+}
+
+
+/* our history page */
+
+.our-history{
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.our-history h1{
+  text-align: center;
+  color: #d30000;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.our-history p{
+  
+  font-size: 1.1rem;
+  color: #333;
+  text-align: justify;
+}
